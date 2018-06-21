@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothaProBol.otf") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothaProLig.otf") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothaProLigIta.otf") format("woff2");
+  font-style: italic;
+  font-weight: 300;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  flex-basis: 1100px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 77px;
+  background: #27273e;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding: 0 19px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 99px;
+  height: 100%;
+}
+
+.logo__img {
+  height: 51px;
+}
+
+.header__contacts {
+  padding: 0 22px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  font-family: GothamPro, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  padding-bottom: 6px;
+  color: #fff;
+}
+
+.contacts__schedule {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(236, 30, 121, 0.7);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #27273e;
+}
+
+.about__banner {
+  max-width: 100%;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 67px;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.sidebar {
+  flex-basis: 20%;
+}
+s
+.sidebar__menu {
+  padding-left: 20px;
+}
+
+.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu__item:not(:last-child) {
+  padding-bottom: 33px;
+}
+
+.menu__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: GothamPro;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ec1e79;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.menu__link--active {
+  color: #000;
+}
+
+.menu__icon {
+  height: 1.2em;
+  width: 1.3em;
+  margin-right: 19px;
+}
+
+.menu__icon--main {
+  background: url('../images/icon/main_icon.png');
+  background-size: cover;
+}
+
+.menu__link--active > .menu__icon--main {
+  background: url('../images/icon/main_icon_active.png');
+  background-size: cover;
+}
+
+.menu__icon--feed {
+  background: url('../images/icon/feed_icon.png');
+  background-size: cover;
+}
+
+.menu__link--active>.menu__icon--feed {
+  background: url('../images/icon/feed_icon_active.png');
+  background-size: cover;
+}
+
+.menu__icon--wallet {
+  background: url('../images/icon/wallet_icon.png');
+  background-size: cover;
+}
+
+.menu__link--active>.menu__icon--wallet {
+  background: url('../images/icon/wallet_icon_active.png');
+  background-size: cover;
+}
+
+.main {
+  flex-basis: 80%;
+}
