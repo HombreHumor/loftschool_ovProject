@@ -9,14 +9,14 @@
   font-family: "GothamPro";
   src: url("../fonts/GothaProLig.otf") format("woff2");
   font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "GothamPro";
   src: url("../fonts/GothaProLigIta.otf") format("woff2");
   font-style: italic;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 .wrapper {
@@ -194,12 +194,14 @@
 .title {
   margin: 0;
   padding: 0;
-  vertical-align: top;
   font-family: GothamPro;
   font-size: 49px;
   font-weight: bold;
-  line-height: 0.45;
   color: #221f1f;
+}
+
+.features__title {
+  margin-top: -11px;
 }
 
 .main__features {
@@ -210,4 +212,80 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 207px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 68px;
+}
+
+.features__icon {
+  max-width: 68px;
+}
+
+.features__item-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 32px;
+  font-family: GothamPro;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2.6px;
+  text-align: center;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.features__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 18px;
+  font-family: GothamPro;
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #221f1f;
+}
+
+.features__intext-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  margin-left: -15px;
+  list-style: none;
+  font-family: GothamPro;
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #221f1f;
+}
+
+.features__intext-item {
+  
+}
+
+.features__intext-item::before {
+  color: #cc3366;
+  content: "•";
+  padding-right: 35px;
 }
