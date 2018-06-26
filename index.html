@@ -22,7 +22,7 @@
         </a>
         <div class="header__contacts contacts">
           <a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
-          <a href="javascript:void(0)" class="contacts__schedule">График работы</a>
+          <button type="button" class="contacts__schedule">График работы</button>
         </div>
       </div>
     </header>
@@ -38,19 +38,19 @@
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="#" class="menu__link menu__link--main menu__link--active">
-                  <i class="menu__icon menu__icon--main"></i>
+                  <span class="menu__icon menu__icon--main"></span>
                   Главная
                 </a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link menu__link--feed">
-                  <i class="menu__icon menu__icon--feed"></i>
+                  <span class="menu__icon menu__icon--feed"></span>
                   Отзывы
                 </a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link menu__link--wallet">
-                  <i class="menu__icon menu__icon--wallet"></i>
+                  <span class="menu__icon menu__icon--wallet"></span>
                   Тарифы
                 </a>
               </li>
@@ -64,7 +64,7 @@
             </h2>
             <ul class="features__list">
               <li class="features__item">
-                <img class="features__icon" src="src/images/icon/flower.png" alt="Уникальность">
+                <div class="features__icon features__icon--flower"></div>
                 <h3 class="features__item-title">Уникальность</h3>
                 <p class="features__text">
                   Создан для вашего комфортного отдыха
@@ -76,7 +76,7 @@
                 </ul>
               </li>
               <li class="features__item">
-                <img class="features__icon" src="src/images/icon/mark-as-favorite-star.png" alt="премиум-класс">
+                <div class="features__icon features__icon--star"></div>
                 <h3 class="features__item-title">премиум-класс</h3>
                 <p class="features__text">
                   Для любителей хороших впечатлений
@@ -88,7 +88,7 @@
                 </ul>
               </li>
               <li class="features__item">
-                <img class="features__icon" src="src/images/icon/painter-palette.png" alt="лакшери-стулья">
+                <div class="features__icon features__icon--palette"></div>
                 <h3 class="features__item-title">лакшери-стулья</h3>
                 <p class="features__text">
                   Всё самое лучшее и незабываемое
@@ -140,45 +140,45 @@
               <span class="pagination__status">
                 Страница 1 из 7
               </span>
-              <a href="#" class="pagination__control pagination__control--prev pagination__control--disable"></a>
+              <button type="button" href="#" class="pagination__control pagination__control--prev pagination__control--disable"></button>
               <ul class="pagination__list">
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--current">
+                  <button type="button" class="pagination__link pagination__link--current">
                     1
-                  </a>
+                  </button>
                 </li>
                 <li class="pagination__item">
-                  <a href="#" class="pagination__link">
+                  <button type="button" class="pagination__link">
                     2
-                  </a>
+                  </button>
                 </li>
                 <li class="pagination__item">
-                  <a href="#" class="pagination__link">
+                  <button type="button" class="pagination__link">
                     3
-                  </a>
+                  </button>
                 </li>
                 <li class="pagination__item">
-                  <a href="#" class="pagination__link">
+                  <button type="button" class="pagination__link">
                     4
-                  </a>
+                  </button>
                 </li>
                 <li class="pagination__item">
-                  <a href="#" class="pagination__link">
+                  <button type="button" class="pagination__link">
                     5
-                  </a>
+                  </button>
                 </li>
                 <li class="pagination__item">
-                  <a href="#" class="pagination__link">
+                  <button type="button" class="pagination__link">
                     6
-                  </a>
+                  </button>
                 </li>
                 <li class="pagination__item">
-                  <a href="#" class="pagination__link">
+                  <button type="button" class="pagination__link">
                     7
-                  </a>
+                  </button>
                 </li>
               </ul>
-              <a href="#" class="pagination__control pagination__control--next"></a>
+              <button type="button" href="#" class="pagination__control pagination__control--next"></button>
             </div>
           </section>
         </main>
@@ -187,7 +187,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__autor-block">
-           Сделано с любовью и старанием на курсе «HTML+CSS» в <b class='footer__important'>LoftSchool</b>. Автор работы: <b class='footer__important'>Крамарь Игорь</b>
+           Сделано с любовью и старанием на курсе «HTML+CSS» в <span class='footer__important'>LoftSchool</span>. Автор работы: <span class='footer__important'>Крамарь Игорь</span>
         </div>
         <a href="#" class="footer__logo logo">
           <img src="src/images/icon/logo.png" alt="Воркадиум" class="logo__img">
@@ -195,10 +195,10 @@
             Воркадиум
           </h2>
         </a>
-        <div class="footer__social social">
-          <h2 class="social__title">
+        <aside class="footer__social social">
+          <span class="social__title">
             Наши социальные сети
-          </h2>
+          </span>
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link social__link--vk"></a>
@@ -216,7 +216,7 @@
               <a href="#" class="social__link social__link--mail"></a>
             </li>
           </ul>
-        </div>
+        </aside>
       </div>
     </footer>
   </div>
