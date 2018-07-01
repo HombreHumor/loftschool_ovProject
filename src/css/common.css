@@ -19,6 +19,10 @@
   font-weight: normal;
 }
 
+html, body {
+  font-family: GothamPro, Helvetica, sans-serif;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -120,7 +124,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 67px;
   background: #27273e;
 }
 
@@ -132,7 +135,11 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 70px;
+  margin-top: 47px;
+}
+
+.page--form {
+  margin-top: 0;
 }
 
 .page__container {
@@ -244,7 +251,6 @@
 .title {
   margin: 0;
   padding: 0;
-  font-family: GothamPro;
   font-size: 49px;
   font-weight: bold;
   color: #221f1f;
@@ -311,7 +317,6 @@
 .features__item-title {
   margin: 0;
   padding: 0;
-  font-family: GothamPro;
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 2.6px;
@@ -325,7 +330,6 @@
   padding: 0;
   margin-top: 18px;
   margin-bottom: 5px;
-  font-family: GothamPro;
   font-size: 18px;
   line-height: 1.67;
   font-weight: normal;
@@ -339,7 +343,6 @@
   padding: 0;
   margin-left: -15px;
   list-style: none;
-  font-family: GothamPro;
   font-size: 18px;
   line-height: 1.67;
   font-weight: normal;
@@ -358,6 +361,7 @@
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.67;
+  margin-bottom: 70px;
 }
 
 .feeds__title {
@@ -503,7 +507,6 @@
 .footer__autor-block {
   max-width: 265px;
   margin-left: 19px;
-  font-family: GothamPro;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.29;
@@ -528,7 +531,6 @@
 
 .social__title {
   margin-bottom: 9px;
-  font-family: GothamPro;
   font-size: 14px;
   font-weight: 700;
   color: #fff;
@@ -598,4 +600,277 @@
 .social__link--mail:hover {
   background: url('../images/icon/social/mail-active.png');
   background-size: cover;
+}
+
+.breadcumbs {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.breadcumbs__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.breadcumbs__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.breadcumbs__link {
+  text-decoration: none;
+  color: #ec1e79;
+}
+
+.breadcumbs__link:hover {
+  text-decoration: underline;
+  color: #7faad4;
+}
+
+.main__reviews {
+  margin-bottom: 57px;
+}
+
+.reviews {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 27px 0;
+}
+
+.reviews__item:not(:last-child) {
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.reviews__left {
+  max-width: 160px;
+  margin-right: 20px;
+}
+
+.reviews__image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.reviews__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 685px;
+}
+
+.reviews__date {
+  font-size: 14px;
+  line-height: 21px;
+  color: #656464;
+}
+
+.reviews__item-name {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.stock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 174px;
+  margin-bottom: 57px;
+  background: url('../images/banner/stockBanner.png');
+  background-size: cover;
+}
+
+.stock__text {
+  max-width: 631px;
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.stock__discount {
+  text-decoration: none;
+  color: #ec1e79;
+  font-weight: 700;
+}
+
+.stock__discount:hover {
+  text-decoration: underline;
+  color: #7faad4;
+}
+
+.revForm {
+  display: block;
+  padding: 45px 70px;
+  margin-bottom: 50px;
+  width: 560px;
+  background-color: #f5f5f5;
+}
+
+.revForm__title {
+  margin-bottom: 20px;
+}
+
+.revForm__contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.revForm__contacts-labelInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.revForm__contacts-label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.revForm__contacts-input {
+  width: 250px;
+  padding: 16px 9px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  color: #908f8f;
+}
+
+.revForm__contacts-input:focus {
+  outline: solid 1px #ec1e79;
+  outline-offset: solid 1px #ec1e79;
+}
+
+.revForm__reviewText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.revForm__reviewText-label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.revForm__reviewText-textarea {
+  width: 97%;
+  min-height: 70px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  resize: none;
+  border-radius: 3px;
+}
+
+.revForm__reviewText-textarea:focus {
+  outline: solid 1px #ec1e79;
+  outline-offset: solid 1px #ec1e79;
+}
+
+.revForm__controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.revForm__fotoControls {
+  max-width: 230px;
+}
+
+.revForm__fotoControls-question {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.revForm__fotoControls-radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.revForm__fotoControls-radioBtn {
+  display: none;
+}
+
+.revForm__fotoControls-label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 5px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.revForm__fotoControls-label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  border: 1px solid #c9c9c9;
+}
+
+.revForm__fotoControls-radioBtn:checked + .revForm__fotoControls-label:before {
+  content: "\2022";
+  color: #ec1e79;
+  font-size: 30px;
+  text-align: center;
+  line-height: 18px;
+  border: 1px solid #ec1e79;
+}
+
+.revForm__fotoControls-afterRadio {
+  font-size: 14px;
+}
+
+.revForm__fotoControls-afterRadio:not(:last-child) {
+  margin-right: 19px;
+}
+
+.revForm__fotoControls-radioBtn:checked + .revForm__fotoControls-label + .revForm__fotoControls-afterRadio {
+  color: #ec1e79;
+}
+
+.revForm__submit {
+  max-width: 139px;
+  height: 45px;
+  padding: 18px 21px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #27273e;
+}
+
+.revForm__submit:hover {
+  background-color: #ec1e79;
 }
