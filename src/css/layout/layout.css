@@ -7,7 +7,7 @@ body {
 }
 
 a, button  {
-  transition: .3s;
+  transition: background .3s, opacity .3s, color .3s;
 }
 
 ul {
