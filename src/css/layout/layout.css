@@ -6,7 +6,7 @@ body {
   height: 100%;
 }
 
-* {
+*  {
   transition: .3s;
 }
 
@@ -56,7 +56,7 @@ button:focus {
 .wrapper {
   position: relative;
   display: flex;
-  min-width: 100%;
+  min-width: 1200px;
   min-height: 100%;
   flex-direction: column;
   align-items: center;

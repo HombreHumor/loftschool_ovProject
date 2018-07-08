@@ -1,0 +1,46 @@
+.partners__title {
+  margin-top: -11px;
+  margin-bottom: 45px;
+}
+
+.main__partners {
+  width: 100%;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 85px;
+}
+
+.partners__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 180px;
+  max-width: 700px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.partners__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+}
+
+.partner__link {
+  width: 100%;
+}
+
+.partner__image {
+  width: 100%;
+}
+
+

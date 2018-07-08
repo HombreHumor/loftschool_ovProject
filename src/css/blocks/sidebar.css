@@ -12,6 +12,10 @@
   list-style: none;
 }
 
+.menu__item {
+  position: relative;
+}
+
 .menu__item:not(:last-child) {
   margin-bottom: 33px;
 }
@@ -23,6 +27,7 @@
   align-items: center;
   font-family: GothamPro;
   font-size: 12px;
+  padding-left: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #ec1e79;
@@ -34,58 +39,110 @@
   color: #000;
 }
 
-.menu__icon {
-  display: inline-block;
-  height: 1.2em;
-  width: 1.3em;
-  margin-right: 19px;
-}
-
-.menu__icon--main {
-  background: url('../../images/icon/main_icon.png');
-  background-size: cover;
-}
-
-.menu__link--main:hover .menu__icon--main {
-  background: url('../../images/icon/main_icon_active.png');
-  background-size: cover;
-}
-
-.menu__link--active>.menu__icon--main {
-  background: url('../../images/icon/main_icon_active.png');
-  background-size: cover;
-}
-
-.menu__icon--feed {
-  background: url('../../images/icon/feed_icon.png');
-  background-size: cover;
-}
-
 .menu__link:hover {
   color: #000;
 }
 
-.menu__link--feed:hover .menu__icon--feed {
-  background: url('../../images/icon/feed_icon_active.png');
-  background-size: cover;
+.menu__link::before {
+  content: ' ';
+  display: inline-block;
+  height: 1.2em;
+  width: 1.3em;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.menu__link--active>.menu__icon--feed {
-  background: url('../../images/icon/feed_icon_active.png');
-  background-size: cover;
+.menu__link::after {
+  content: ' ';
+  display: inline-block;
+  height: 1.2em;
+  width: 1.3em;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.menu__icon--wallet {
+.menu__link--main::before {
+  background: url('../../images/icon/main_icon.png');
+  background-size: cover;
+  opacity: 1;
+}
+
+.menu__link--main::after {
+  background: url('../../images/icon/main_icon_active.png');
+  background-size: cover;
+  opacity: 0;
+}
+
+.menu__link--main:hover::before {
+  opacity: 0;
+}
+
+.menu__link--main:hover::after {
+  opacity: 1;
+}
+
+.menu__link--active.menu__link--main::before {
+  opacity: 0;
+}
+
+.menu__link--active.menu__link--main::after {
+  opacity: 1;
+}
+
+.menu__link--feed::before {
+  background: url('../../images/icon/feed_icon.png');
+  background-size: cover;
+  opacity: 1;
+}
+
+.menu__link--feed::after {
+  background: url('../../images/icon/feed_icon_active.png');
+  background-size: cover;
+  opacity: 0;
+}
+
+.menu__link--feed:hover::before {
+  opacity: 0;
+}
+
+.menu__link--feed:hover::after {
+  opacity: 1;
+}
+
+.menu__link--active.menu__link--feed::before {
+  opacity: 0;
+}
+
+.menu__link--active.menu__link--feed::after {
+  opacity: 1;
+}
+
+.menu__link--wallet::before {
   background: url('../../images/icon/wallet_icon.png');
   background-size: cover;
+  opacity: 1;
 }
 
-.menu__link--wallet:hover .menu__icon--wallet {
+.menu__link--wallet::after {
   background: url('../../images/icon/wallet_icon_active.png');
   background-size: cover;
+  opacity: 0;
 }
 
-.menu__link--active>.menu__icon--wallet {
-  background: url('../../images/icon/wallet_icon_active.png');
-  background-size: cover;
+.menu__link--wallet:hover::before {
+  opacity: 0;
+}
+
+.menu__link--wallet:hover::after {
+  opacity: 1;
+}
+
+.menu__link--active.menu__link--wallet::before {
+  opacity: 0;
+}
+
+.menu__link--active.menu__link--wallet::after {
+  opacity: 1;
 }

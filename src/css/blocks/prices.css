@@ -1,0 +1,106 @@
+.prices__title {
+  margin-top: -11px;
+  margin-bottom: 40px;
+}
+
+.main__prices {
+  width: 100%;
+  margin-top: 29px;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 85px;
+}
+
+.prices__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 830px;
+  justify-content: space-between;
+  align-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.prices__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 250px;
+  text-align: center;
+}
+
+.prices__subtitle-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 153px;
+  margin-bottom: 26px;
+  justify-content: center;
+  align-items: center;
+  background-color: #27273e;
+  background-size: cover;
+  background-position: center center;
+}
+
+.prices__subtitle-wrap--one {
+  background-image: url(../../images/content/price-one.png);
+}
+
+.prices__subtitle-wrap--three {
+  background-image: url(../../images/content/price-three.png);
+}
+
+.prices__subtitle-wrap--ten {
+  background-image: url(../../images/content/price-10-10.png);
+}
+
+.prices__subtitle-wrap--unlimit {
+  background-image: url(../../images/content/price-unlimited-one.png);
+}
+
+.prices__subtitle-wrap--all-inc {
+  background-image: url(../../images/content/price-all-incl.png);
+}
+
+.prices__subtitle-wrap--talks {
+  background-image: url(../../images/content/price-talks.png);
+}
+
+.prices__subtitle {
+  max-width: 80%;
+  font-family: GothamPro;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5dd1f8;
+}
+
+.prices__subtitle--vip {
+  color: #ec1e79;
+  margin-bottom: 8px;
+}
+
+.prices__price {
+  margin-bottom: 16px;
+  font-family: GothamPro;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.17;
+}
+
+.prices__text {
+  font-family: GothamPro;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #221f1f;
+}
