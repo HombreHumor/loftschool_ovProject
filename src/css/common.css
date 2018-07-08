@@ -1,6 +1,6 @@
 @import url('vendor.css') all;
-@import url('layout/layout.css') all;
 @import url('layout/fonts.css') all;
+@import url('layout/layout.css') all;
 @import url('blocks/header.css') all;
 @import url('blocks/about.css') all;
 @import url('blocks/sidebar.css') all;
@@ -13,3 +13,4 @@
 @import url('blocks/reviews.css') all;
 @import url('blocks/stock.css') all;
 @import url('blocks/revForm.css') all;
+@import url('blocks/welcome.css') all;

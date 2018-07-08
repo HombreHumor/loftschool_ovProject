@@ -1,0 +1,63 @@
+@keyframes twister {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) rotate(20deg);
+  }
+
+  40% {
+    transform: rotate(-20deg);
+    opacity: 1
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../images/bg/auth.jpg) center center / cover no-repeat;
+}
+
+.welcome__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.welcome__center-block {
+  text-align: center;
+  animation: twister 1s;
+}
+
+.welcome__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+}
+
+.welcome__btn {
+  display: block;
+  padding: 12px 20px;
+  color: #ec1e79;
+  border: 3px solid #ec1e79;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.welcome__btn:hover {
+  color: #fff;
+  background: #ec1e79;
+}

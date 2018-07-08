@@ -73,15 +73,61 @@
   color: #fff;
 }
 
+.contacts__place-wrapper {
+  position: relative;
+}
+
+.contacts__dropdown {
+  position: absolute;
+  margin-top: 15px;
+  min-width: 145px;
+  padding: 18px 11px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  top: 100%;
+  left: -9999px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
+  transform: translateX(-65%);
+  background: #fff;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.contacts__dropdown-stick {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  top: 100%;
+  left: -9999px;
+  box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
+  transform: translateX(-65%);
+  background: #fff;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.contacts__dropdown-days {
+  color: #ec1e79;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
 .contacts__schedule {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
+  text-decoration: underline;
   color: rgba(236, 30, 121, 0.7);
 }
 
 .contacts__schedule:hover {
-  text-decoration: underline;
   cursor: pointer;
   color: #7faad4;
+}
+
+.contacts__place-wrapper:hover .contacts__dropdown {
+  left: 50%;
+  opacity: 1;
 }

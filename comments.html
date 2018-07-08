@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>"Воркадиум" – коворкинг твоей мечты</title>
+  <title>"Воркадиум" – отзывы</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,300i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="src/css/common.css">
 </head>
 <body>
+  <!--[if lte IE9]>
+    <div class="donkey-error">
+      Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="https://browsehappy.com/">обновите его</a>.
+    </div>
+  <![endif]-->
   <div class="wrapper">
     <h1 class="v-hidden">Воркадиум</h1>
     <header class="header">
@@ -21,7 +26,13 @@
         </a>
         <address class="header__contacts contacts">
           <a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
-          <button type="button" class="contacts__schedule">График работы</button>
+          <div class="contacts__place-wrapper">
+            <button type="button" class="contacts__schedule">График работы</button>
+            <div class="contacts__dropdown">
+              <div class="contacts__dropdown-days">пн-вс: 09:00-20:00</div>
+              <div class="contacts__dropdown-time">обед: 14:00-14:30</div>
+            </div>
+          </div>
         </address>
       </div>
     </header>
@@ -31,13 +42,13 @@
           <nav class="sidebar__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link menu__link--main">
+                <a href="main.html" class="menu__link menu__link--main">
                   <span class="menu__icon menu__icon--main"></span>
                   Главная
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link menu__link--feed menu__link--active">
+                <a href="comments.html" class="menu__link menu__link--feed menu__link--active">
                   <span class="menu__icon menu__icon--feed"></span>
                   Отзывы
                 </a>
