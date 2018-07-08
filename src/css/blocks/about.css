@@ -1,0 +1,10 @@
+.about {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #27273e;
+}
+
+.about__banner {
+  max-width: 100%;
+}

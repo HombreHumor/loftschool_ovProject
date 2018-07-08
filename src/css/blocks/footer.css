@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  height: 77px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #27273e;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer__autor-block {
+  max-width: 265px;
+  margin-left: 19px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  color: #fff;
+}
+
+.footer__important {
+  font-weight: 700;
+}
+
+.footer__social {
+  margin-right: 22px;
+}

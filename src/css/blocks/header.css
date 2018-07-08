@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 77px;
+  background: #27273e;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding: 0 19px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 99px;
+  height: 100%;
+  text-decoration: none;
+}
+
+.logo__img {
+  height: 51px;
+  margin-bottom: 4px;
+  opacity: 1;
+  transition: opacity .25s ease-in;
+}
+
+.logo__title {
+  opacity: 0;
+  position: absolute;
+  transition: opacity .25s ease-in;
+  text-transform: uppercase;
+  font-family: GothamPro;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+
+.logo:hover .logo__title {
+  opacity: 1;
+}
+
+.logo:hover .logo__img {
+  opacity: .3;
+}
+
+.header__contacts {
+  padding: 0 22px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  font-family: GothamPro, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.contacts__schedule {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(236, 30, 121, 0.7);
+}
+
+.contacts__schedule:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #7faad4;
+}

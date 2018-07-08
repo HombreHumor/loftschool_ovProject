@@ -1,0 +1,26 @@
+.breadcumbs {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.breadcumbs__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.breadcumbs__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.breadcumbs__link {
+  text-decoration: none;
+  color: #ec1e79;
+}
+
+.breadcumbs__link:hover {
+  text-decoration: underline;
+  color: #7faad4;
+}

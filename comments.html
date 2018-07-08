@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>"Воркадиум" – коворкинг твоей мечты</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,300i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="src/css/vendor.css">
   <link rel="stylesheet" href="src/css/common.css">
 </head>
 <body>
@@ -20,10 +19,10 @@
             Воркадиум
           </h2>
         </a>
-        <div class="header__contacts contacts">
+        <address class="header__contacts contacts">
           <a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
           <button type="button" class="contacts__schedule">График работы</button>
-        </div>
+        </address>
       </div>
     </header>
     <div class="page">
@@ -79,7 +78,9 @@
             <ul class="reviews__list">
               <li class="reviews__item">
                 <div class="reviews__left">
-                  <img src="src/images/content/review-pavlov.png" alt="Олег Павлов" class="reviews__image">
+                  <div class="reviews__image-wrapper">
+                    <img src="src/images/content/review-pavlov.png" alt="Олег Павлов" class="reviews__image">
+                  </div>
                 </div>
                 <div class="reviews__right">
                   <time datetime="2016-10-12" class="reviews__date">12.10.2016</time>
@@ -89,7 +90,9 @@
               </li>
               <li class="reviews__item">
                 <div class="reviews__left">
-                  <img src="src/images/content/review-izil.png" alt="Эрнест Изиль" class="reviews__image">
+                  <div class="reviews__image-wrapper">
+                    <img src="src/images/content/review-izil.png" alt="Эрнест Изиль" class="reviews__image">
+                  </div>
                 </div>
                 <div class="reviews__right">
                   <time datetime="2016-02-01" class="reviews__date">01.02.2016</time>
@@ -99,7 +102,8 @@
               </li>
               <li class="reviews__item">
                 <div class="reviews__left">
-                  <img src="src/images/content/review-default.png" alt="Елена Сургай" class="reviews__image">
+                  <div class="reviews__image-wrapper">
+                  </div> 
                 </div>
                 <div class="reviews__right">
                   <time datetime="2015-12-22" class="reviews__date">22.12.2015</time>
@@ -109,7 +113,9 @@
               </li>
               <li class="reviews__item">
                 <div class="reviews__left">
-                  <img src="src/images/content/review-osadchaya.png" alt="Наталья Осадчая" class="reviews__image">
+                  <div class="reviews__image-wrapper">
+                    <img src="src/images/content/review-osadchaya.png" alt="Наталья Осадчая" class="reviews__image">
+                  </div>
                 </div>
                 <div class="reviews__right">
                   <time datetime="2015-08-14" class="reviews__date">14.08.2015</time>
@@ -167,9 +173,9 @@
       </div>
     </div>
     <div class="main__stock stock">
-      <div class="stock__text">
+      <p class="stock__text">
         Для наших новых клиентов мы предлагаем <a href="#" class="stock__discount">скидку 50%</a> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!
-      </div>
+      </p>
     </div>
     <div class="page page--form">
       <div class="container page__container">
@@ -181,16 +187,16 @@
             <div class="revForm__contacts">
               <div class="revForm__contacts-labelInput">
                 <label for="name" class="revForm__contacts-label">Ваше имя</label>
-                <input type="text" name="name" class="revForm__contacts-input" placeholder="Андрей">
+                <input type="text" id="name" name="name" class="revForm__contacts-input" placeholder="Андрей">
               </div>
               <div class="revForm__contacts-labelInput">
                 <label for="vk" class="revForm__contacts-label">Ссылка на профиль VK</label>
-                <input type="text" name="vk" class="revForm__contacts-input" placeholder="vk.com/example">
+                <input type="text" id="vk" name="vk" class="revForm__contacts-input" placeholder="vk.com/example">
               </div>
             </div>
             <div class="revForm__reviewText">
               <label for="reviewText" class="revForm__reviewText-label">Текст отзыва</label>
-              <textarea name="reviewText" id="" class="revForm__reviewText-textarea">Мне понравилось</textarea>
+              <textarea name="reviewText" id="reviewText" class="revForm__reviewText-textarea">Мне понравилось</textarea>
             </div>
             <div class="revForm__controls">
               <div class="revForm__fotoControls">

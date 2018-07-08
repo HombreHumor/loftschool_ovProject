@@ -1,0 +1,91 @@
+.sidebar {
+  flex-basis: 18%;
+}
+
+.sidebar__menu {
+  margin-left: 20px;
+}
+
+.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.menu__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: GothamPro;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ec1e79;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.menu__link--active {
+  color: #000;
+}
+
+.menu__icon {
+  display: inline-block;
+  height: 1.2em;
+  width: 1.3em;
+  margin-right: 19px;
+}
+
+.menu__icon--main {
+  background: url('../../images/icon/main_icon.png');
+  background-size: cover;
+}
+
+.menu__link--main:hover .menu__icon--main {
+  background: url('../../images/icon/main_icon_active.png');
+  background-size: cover;
+}
+
+.menu__link--active>.menu__icon--main {
+  background: url('../../images/icon/main_icon_active.png');
+  background-size: cover;
+}
+
+.menu__icon--feed {
+  background: url('../../images/icon/feed_icon.png');
+  background-size: cover;
+}
+
+.menu__link:hover {
+  color: #000;
+}
+
+.menu__link--feed:hover .menu__icon--feed {
+  background: url('../../images/icon/feed_icon_active.png');
+  background-size: cover;
+}
+
+.menu__link--active>.menu__icon--feed {
+  background: url('../../images/icon/feed_icon_active.png');
+  background-size: cover;
+}
+
+.menu__icon--wallet {
+  background: url('../../images/icon/wallet_icon.png');
+  background-size: cover;
+}
+
+.menu__link--wallet:hover .menu__icon--wallet {
+  background: url('../../images/icon/wallet_icon_active.png');
+  background-size: cover;
+}
+
+.menu__link--active>.menu__icon--wallet {
+  background: url('../../images/icon/wallet_icon_active.png');
+  background-size: cover;
+}
