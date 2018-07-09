@@ -17,7 +17,7 @@
   margin-bottom: 15px;
 }
 
-.reviews-form__contacts-labelInput {
+.reviews-form__contacts-label-input {
   display: flex;
   flex-direction: column;
 }
@@ -41,19 +41,19 @@
   outline-offset: solid 1px #ec1e79;
 }
 
-.reviews-form__reviewText {
+.reviews-form__review-text {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.reviews-form__reviewText-label {
+.reviews-form__review-text-label {
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.reviews-form__reviewText-textarea {
+.reviews-form__review-text-textarea {
   width: 97%;
   min-height: 70px;
   padding: 10px;
@@ -63,7 +63,7 @@
   border-radius: 3px;
 }
 
-.reviews-form__reviewText-textarea:focus {
+.reviews-form__review-text-textarea:focus {
   outline: solid 1px #ec1e79;
   outline-offset: solid 1px #ec1e79;
 }
@@ -89,7 +89,7 @@
   align-items: center;
 }
 
-.reviews-form__foto-controls-radioBtn {
+.reviews-form__foto-controls-radio-btn {
   display: none;
 }
 
@@ -116,7 +116,7 @@
   border: 1px solid #c9c9c9;
 }
 
-.reviews-form__foto-controls-radioBtn:checked+.reviews-form__foto-controls-label:before {
+.reviews-form__foto-controls-radio-btn:checked+.reviews-form__foto-controls-label:before {
   content: "\2022";
   color: #ec1e79;
   font-size: 30px;
@@ -125,19 +125,19 @@
   border: 1px solid #ec1e79;
 }
 
-.reviews-form__foto-controls-afterRadio {
+.reviews-form__foto-controls-after-radio {
   font-size: 14px;
 }
 
-.reviews-form__foto-controls-afterRadio:hover {
+.reviews-form__foto-controls-after-radio:hover {
   cursor: pointer;
 }
 
-.reviews-form__foto-controls-afterRadio:not(:last-child) {
+.reviews-form__foto-controls-after-radio:not(:last-child) {
   margin-right: 19px;
 }
 
-.reviews-form__foto-controls-radioBtn:checked+.reviews-form__foto-controls-label+.reviews-form__foto-controls-afterRadio {
+.reviews-form__foto-controls-radio-btn:checked+.reviews-form__foto-controls-label+.reviews-form__foto-controls-after-radio {
   color: #ec1e79;
 }
 

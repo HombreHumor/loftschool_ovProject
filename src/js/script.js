@@ -1,6 +1,6 @@
 (function () {
-  var afterRadio = document.querySelectorAll('.reviews-form__foto-controls-afterRadio');
-  var inputRadio = document.querySelectorAll('.reviews-form__foto-controls-radioBtn');
+  var afterRadio = document.querySelectorAll('.reviews-form__foto-controls-after-radio');
+  var inputRadio = document.querySelectorAll('.reviews-form__foto-controls-radio-btn');
 
   afterRadio[0].addEventListener('click', function(){
     inputRadio[0].checked = !inputRadio[0].checked;
