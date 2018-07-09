@@ -190,35 +190,35 @@
         <aside class="sidebar">
         </aside>
         <main class="main">
-          <form action="" class="main__revForm revForm">
-            <h2 class="revForm__title title">Оставить отзыв</h2>
-            <div class="revForm__contacts">
-              <div class="revForm__contacts-labelInput">
-                <label for="name" class="revForm__contacts-label">Ваше имя</label>
-                <input type="text" id="name" name="name" class="revForm__contacts-input" placeholder="Андрей">
+          <form action="" class="main__reviews-form reviews-form">
+            <h2 class="reviews-form__title title">Оставить отзыв</h2>
+            <div class="reviews-form__contacts">
+              <div class="reviews-form__contacts-labelInput">
+                <label for="name" class="reviews-form__contacts-label">Ваше имя</label>
+                <input type="text" id="name" name="name" class="reviews-form__contacts-input" placeholder="Андрей">
               </div>
-              <div class="revForm__contacts-labelInput">
-                <label for="vk" class="revForm__contacts-label">Ссылка на профиль VK</label>
-                <input type="text" id="vk" name="vk" class="revForm__contacts-input" placeholder="vk.com/example">
+              <div class="reviews-form__contacts-labelInput">
+                <label for="vk" class="reviews-form__contacts-label">Ссылка на профиль VK</label>
+                <input type="text" id="vk" name="vk" class="reviews-form__contacts-input" placeholder="vk.com/example">
               </div>
             </div>
-            <div class="revForm__reviewText">
-              <label for="reviewText" class="revForm__reviewText-label">Текст отзыва</label>
-              <textarea name="reviewText" id="reviewText" class="revForm__reviewText-textarea">Мне понравилось</textarea>
+            <div class="reviews-form__reviewText">
+              <label for="reviewText" class="reviews-form__reviewText-label">Текст отзыва</label>
+              <textarea name="reviewText" id="reviewText" class="reviews-form__reviewText-textarea">Мне понравилось</textarea>
             </div>
-            <div class="revForm__controls">
-              <div class="revForm__fotoControls">
-                <div class="revForm__fotoControls-question">Отображать фото в отзыве?</div>
-                <div class="revForm__fotoControls-radio">
-                  <input type="radio" id="photoCheckYes" name="isPhoto" class="revForm__fotoControls-radioBtn" value="yes" checked>
-                  <label for="photoCheckYes" class="revForm__fotoControls-label"></label>
-                  <span class="revForm__fotoControls-afterRadio">Да</span>
-                  <input type="radio"id="photoCheckNo" name="isPhoto" class="revForm__fotoControls-radioBtn" value="no">
-                  <label for="photoCheckNo" class="revForm__fotoControls-label"></label>
-                  <span class="revForm__fotoControls-afterRadio">Нет</span>
+            <div class="reviews-form__controls">
+              <div class="reviews-form__foto-controls">
+                <div class="reviews-form__foto-controls-question">Отображать фото в отзыве?</div>
+                <div class="reviews-form__foto-controls-radio">
+                  <input type="radio" id="photoCheckYes" name="isPhoto" class="reviews-form__foto-controls-radioBtn" value="yes" checked>
+                  <label for="photoCheckYes" class="reviews-form__foto-controls-label"></label>
+                  <button type="button" class="reviews-form__foto-controls-afterRadio">Да</button>
+                  <input type="radio"id="photoCheckNo" name="isPhoto" class="reviews-form__foto-controls-radioBtn" value="no">
+                  <label for="photoCheckNo" class="reviews-form__foto-controls-label"></label>
+                  <button type="button" class="reviews-form__foto-controls-afterRadio">Нет</button>
                 </div>
               </div>
-              <button type="submit" class="revForm__submit">Отправить</button>
+              <button type="submit" class="reviews-form__submit">Отправить</button>
             </div>
           </form>
         </main>
@@ -260,5 +260,6 @@
       </div>
     </footer>
   </div>
+  <script src="src/js/script.js"></script>
 </body>
 </html>

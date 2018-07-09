@@ -35,12 +35,13 @@
   min-width: 180px;
 }
 
-.partner__link {
-  width: 100%;
+.partners__link {
+  filter: grayscale(1);
+  transition: filter .3s;
 }
 
-.partner__image {
-  width: 100%;
+.partners__link:hover {
+  filter: grayscale(0);
 }
 
 
